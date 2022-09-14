@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(51, 53, 54);
+        }
+
+        table {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin: 0 0 20px 0;
+            padding: 10px 0 10px 0;
+            /* word-spacing: 15px; */
+            color: #fff;
+            font-family: Georgia, serif;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            /* border-radius: 40px; */
+            background-color: #03e9f4;
+            box-shadow: 0 0 25px 0 rgba(74, 74, 74);
+        }
+
+        .table {
+            font-size: 23px;
+            color: #03e9f4;
+            /* float: left; */
+        }
+
+        form tr .last-clm {
+            /* float: right; */
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #3bd9d9;
+            color: #fff;
+            font-size: 20px;
+            width: 220px;
+            padding: 7px 25px 7px 25px;
+        }
+
+        tr td {
+            margin-bottom: 20px;
+
+        }
+
+        .table button {
+            float: left;
+            background: transparent;
+            color: #3bd9d9;
+            font-weight: 400;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding: 16px 36px;
+            margin-bottom: 12px;
+            border: 2px solid #3bd9d9;
+            border-radius: 32px;
+            transform: translate(0);
+            overflow: hidden;
+            cursor: pointer;
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+        }
+
+        .table button::before {
+            content: "";
+            position: absolute;
+            background: #ffffff;
+            width: 8px;
+            top: 0;
+            bottom: 0;
+            left: -32px;
+            transform: rotate(-16deg);
+            filter: blur(6px);
+        }
+
+        .table button:hover::before {
+            left: calc(100% + 32px);
+            transition: 0.75s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <h1>REGISTER</h1>
+        <table border="0" width="600" height="50" align="center" bordercolor="black">
+            <form>
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Full Name :
+                        <input type="text" class="name" placeholder="Full Name" required>
+                    </td>
+                    <td></td>
+
+                    <td class="last-clm" style="float: right; margin-right: 186px;">Email ID :
+                        <input type="email" class="Email" placeholder="Email Address" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3" class="last-clm" style="float: right; margin-right: 160px;">Mobile NO. :
+                        <input type="number" class="mob" placeholder="Mobile Number" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Create Password :
+                        <input type="password" class="pswd" placeholder="Password" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 99px;">Confirm Password :
+                        <input type="password" class="Cnfpswd" placeholder="Confirm Password" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Blood Group :
+                        <input type="text" class="bldgrop" placeholder="Blood Group" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 380px;">Gender :
+                        <select name="Gender" id="Gender" placeholder="Select" required
+                            style="font-size: 20px; background:none; border: none; color: rgb(255, 255, 255);">
+                            <option value="" style="background: #000;">Male</option>
+                            <option value="" style="background: #000;">Female</option>
+                            <option value="" style="background: #000;">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="margin-left: 150px; float: left;">
+                        Birth Date :
+                        <select name="dates" id="" required
+                            style="font-size: 20px; padding: 0 30px 0 30px; background:none; border: none; color: rgb(255, 255, 255);">
+                            <option value="01" style="background: #000;">01</option>
+                            <option value="01" style="background: #000;">02</option>
+                            <option value="01" style="background: #000;">03</option>
+                            <option value="01" style="background: #000;">04</option>
+                            <option value="01" style="background: #000;">05</option>
+                            <option value="01" style="background: #000;">06</option>
+                            <option value="01" style="background: #000;">07</option>
+                            <option value="01" style="background: #000;">08</option>
+                            <option value="01" style="background: #000;">09</option>
+                            <option value="01" style="background: #000;">10</option>
+                            <option value="01" style="background: #000;">11</option>
+                            <option value="01" style="background: #000;">12</option>
+                            <option value="01" style="background: #000;">13</option>
+                            <option value="01" style="background: #000;">14</option>
+                            <option value="01" style="background: #000;">15</option>
+                            <option value="01" style="background: #000;">16</option>
+                            <option value="01" style="background: #000;">17</option>
+                            <option value="01" style="background: #000;">18</option>
+                            <option value="01" style="background: #000;">19</option>
+                            <option value="01" style="background: #000;">20</option>
+                            <option value="01" style="background: #000;">21</option>
+                            <option value="01" style="background: #000;">22</option>
+                            <option value="01" style="background: #000;">23</option>
+                            <option value="01" style="background: #000;">24</option>
+                            <option value="01" style="background: #000;">25</option>
+                            <option value="01" style="background: #000;">26</option>
+                            <option value="01" style="background: #000;">27</option>
+                            <option value="01" style="background: #000;">28</option>
+                            <option value="01" style="background: #000;">29</option>
+                            <option value="01" style="background: #000;">30</option>
+                            <option value="01" style="background: #000;">31</option>
+                        </select>
+                        <!-- <input type="number" placeholder="Birth Date" required> -->
+                    </td>
+
+                    <td>
+                        Month :
+                        <select name="dates" id="" required
+                            style="font-size: 20px; padding: 0 30px 0 30px; background:none; border: none; color: rgb(255, 255, 255);">
+                            <option value="01" style="background: #000;">01</option>
+                            <option value="01" style="background: #000;">02</option>
+                            <option value="01" style="background: #000;">03</option>
+                            <option value="01" style="background: #000;">04</option>
+                            <option value="01" style="background: #000;">05</option>
+                            <option value="01" style="background: #000;">06</option>
+                            <option value="01" style="background: #000;">07</option>
+                            <option value="01" style="background: #000;">08</option>
+                            <option value="01" style="background: #000;">09</option>
+                            <option value="01" style="background: #000;">10</option>
+                            <option value="01" style="background: #000;">11</option>
+                        </select>
+
+                        <!-- <input type="number" placeholder="Month" required> -->
+                    </td>
+
+                    <td class="last-clm" style="float: right; margin-right: 229px;">
+                        Year :
+                        <input type="number" placeholder="Year" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Weight :
+                        <input type="number" placeholder="Weight">
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 0px;">Last Donation Date(optional) :
+                        <input type="date" placeholder="Last Donation Date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Mobile No. :
+                        <input type="number" placeholder="Mobile no." required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 148px;">Pin/Zip Code :
+                        <input type="number" placeholder="Pin No." required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">State :
+                        <input type="text" placeholder="State" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 227px;">Dist. :
+                        <input type="text" placeholder="District" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">Tehasil/Block :
+                        <input type="text" placeholder="Block" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 135px;">City or Village :
+                        <input type="text" placeholder="city/Village" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="margin-left: 150px; float: left;">
+                        Aadhar Card :
+                        <input type="file" required>
+                    </td>
+                    <td></td>
+                    <td class="last-clm" style="float: right; margin-right: 217px;">
+                        Photo :
+                        <input type="file" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="margin-left: 50px; float: left;">
+                        <input type="checkbox" name="confirmation" required> I Accept <a href="" class="link"
+                            style="text-decoration: none; text-decoration-line: none; color: #fff;">Term
+                        </a> & <a href="" class="link"
+                            style="text-decoration: none; text-decoration-line: none; color: #fff;">Condition</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3">
+                        <button><b>Register</b></button>
+                    </td>
+
+                </tr>
+
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
